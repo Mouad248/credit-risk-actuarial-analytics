@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 14% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 14% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 14% 20%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 90%;
+    --secondary-foreground: 220 14% 20%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 14% 40%;
+
+    --accent: 213 94% 68%;
+    --accent-foreground: 220 14% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 14% 90%;
+    --input: 220 14% 90%;
+    --ring: 221 83% 53%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 220 14% 20%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 221 83% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 221 83% 33%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 222.2 47.4% 15%;
+    --sidebar-ring: 221 83% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth antialiased;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-medium tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-glass;
+  }
+  
+  .glass-card {
+    @apply glass rounded-2xl p-6 transition-all duration-300 hover:shadow-glass-lg;
+  }
+  
+  .page-transition {
+    @apply animate-fade-in opacity-0;
+  }
+  
+  .nav-link {
+    @apply relative px-4 py-2 text-gray-800 transition-colors duration-300 hover:text-brand-primary-dark;
+  }
+  
+  .nav-link.active {
+    @apply text-brand-primary-dark font-medium;
+  }
+  
+  .nav-link.active::after {
+    @apply content-[''] absolute bottom-0 left-0 h-0.5 w-full bg-brand-primary-dark rounded-full;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .btn-primary {
+    @apply btn bg-brand-primary-dark text-white hover:bg-brand-primary-dark/90 px-4 py-2;
+  }
+
+  .btn-outline {
+    @apply btn border border-gray-400 bg-transparent hover:bg-gray-100/10 text-gray-800 px-4 py-2;
+  }
+
+  .chart-container {
+    @apply h-[300px] w-full;
+  }
+}
+
+.card-hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.section-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section-animate.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}

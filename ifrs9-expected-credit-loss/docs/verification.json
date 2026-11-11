@@ -1,0 +1,59 @@
+{
+  "date_utc": "2026-11-10",
+  "python": "3.14.4",
+  "scope": "local recovery verification; no original authorship or production use established",
+  "checks": [
+    {
+      "command": "python -m pytest -q",
+      "exit_code": 0,
+      "summary": "50 passed in 2.14s"
+    },
+    {
+      "command": "python -X utf8 -B ecl_engine_phase1.py",
+      "exit_code": 0,
+      "summary": "exit code 0"
+    },
+    {
+      "command": "python -X utf8 -B ecl_engine_phase2.py",
+      "exit_code": 0,
+      "summary": "exit code 0"
+    },
+    {
+      "command": "python -X utf8 -B ecl_engine_phase3.py",
+      "exit_code": 0,
+      "summary": "exit code 0"
+    },
+    {
+      "command": "python -X utf8 -B ecl_engine_phase4.py",
+      "exit_code": 0,
+      "summary": "exit code 0"
+    },
+    {
+      "command": "python -X utf8 -B macro_pd.py",
+      "exit_code": 0,
+      "summary": "exit code 0"
+    },
+    {
+      "command": "python scripts/export_verified_examples.py",
+      "exit_code": 0,
+      "summary": "exit code 0"
+    },
+    {
+      "command": "python make_figures.py",
+      "exit_code": 0,
+      "summary": "exit code 0"
+    }
+  ],
+  "checks_all_passed": true,
+  "unverified": [
+    "Historical Phase1-4 spreadsheet formulas not reconciled",
+    "Historical deck methodology not independently validated",
+    "Original published anchor transcription not fully reconciled",
+    "Streamlit UI execution and visual interactions"
+  ],
+  "artifact_reconciliation": {
+    "excel_values_match_python_json_to_cent": true,
+    "baseline_ecl": "2126552.64",
+    "weighted_ecl": "2239965.53"
+  }
+}

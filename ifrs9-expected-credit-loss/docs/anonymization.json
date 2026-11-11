@@ -1,0 +1,14 @@
+{
+  "date_utc": "2026-11-10",
+  "files_checked": 29,
+  "office_archives_checked": 6,
+  "known_marker_and_property_checks_passed": true,
+  "findings": [],
+  "scope": "Known original labels/account markers and Office properties; not a complete named-entity or binary forensic guarantee",
+  "exceptions": [
+    "Required copyright/license notices",
+    "Public research/source attribution",
+    "Tokenizer vocabulary"
+  ],
+  "private_artifacts": "Originals, logs and any raw benchmark data are in this project's ignored .private folder"
+}

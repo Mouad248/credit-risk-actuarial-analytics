@@ -1,0 +1,672 @@
+{
+  "data_kind": "synthetic demonstration exposures",
+  "baseline": {
+    "loans": [
+      {
+        "loan_name": "Borrower 001",
+        "principal": 2000000,
+        "orig_rating": "BBB",
+        "curr_rating": "BBB",
+        "dpd": 0,
+        "flags": [],
+        "stage": 1,
+        "triggers": [
+          "No SICR triggers fired \u2014 loan remains performing"
+        ],
+        "ecl_12m": 434.78,
+        "ecl_lifetime": 4483.63,
+        "ecl_applied": 434.78,
+        "lgd_used": 0.45,
+        "measurement": "rating_curve"
+      },
+      {
+        "loan_name": "Borrower 002",
+        "principal": 3000000,
+        "orig_rating": "A",
+        "curr_rating": "A-",
+        "dpd": 0,
+        "flags": [],
+        "stage": 1,
+        "triggers": [
+          "No SICR triggers fired \u2014 loan remains performing"
+        ],
+        "ecl_12m": 393.2,
+        "ecl_lifetime": 1875.15,
+        "ecl_applied": 393.2,
+        "lgd_used": 0.45,
+        "measurement": "rating_curve"
+      },
+      {
+        "loan_name": "Borrower 003",
+        "principal": 5000000,
+        "orig_rating": "BBB",
+        "curr_rating": "BB-",
+        "dpd": 0,
+        "flags": [],
+        "stage": 2,
+        "triggers": [
+          "Downgrade of 4 notches (BBB \u2192 BB-) >= threshold of 2",
+          "PD ratio 17.4x >= 2.0x AND absolute \u0394 0.82% >= 0.50%"
+        ],
+        "ecl_12m": 7751.2,
+        "ecl_lifetime": 67739.25,
+        "ecl_applied": 67739.25,
+        "lgd_used": 0.45,
+        "measurement": "rating_curve"
+      },
+      {
+        "loan_name": "Borrower 004",
+        "principal": 1500000,
+        "orig_rating": "BB",
+        "curr_rating": "BB",
+        "dpd": 35,
+        "flags": [],
+        "stage": 2,
+        "triggers": [
+          "DPD = 35 >= 30 (IFRS 9 \u00a75.5.11 rebuttable presumption)"
+        ],
+        "ecl_12m": 2314.29,
+        "ecl_lifetime": 15467.0,
+        "ecl_applied": 15467.0,
+        "lgd_used": 0.45,
+        "measurement": "rating_curve"
+      },
+      {
+        "loan_name": "Borrower 005",
+        "principal": 4000000,
+        "orig_rating": "BBB+",
+        "curr_rating": "BBB-",
+        "dpd": 0,
+        "flags": [
+          "watchlist"
+        ],
+        "stage": 2,
+        "triggers": [
+          "Downgrade of 2 notches (BBB+ \u2192 BBB-) >= threshold of 2",
+          "Qualitative flag: watchlist"
+        ],
+        "ecl_12m": 865.38,
+        "ecl_lifetime": 11668.01,
+        "ecl_applied": 11668.01,
+        "lgd_used": 0.45,
+        "measurement": "rating_curve"
+      },
+      {
+        "loan_name": "Borrower 006",
+        "principal": 800000,
+        "orig_rating": "BB",
+        "curr_rating": "CCC/C",
+        "dpd": 95,
+        "flags": [],
+        "stage": 3,
+        "triggers": [
+          "DPD >= 90 (CRR Art. 178)"
+        ],
+        "ecl_12m": 128822.64,
+        "ecl_lifetime": 198278.17,
+        "ecl_applied": 490566.04,
+        "lgd_used": 0.65,
+        "measurement": "defaulted_one_year_loss_proxy"
+      },
+      {
+        "loan_name": "Borrower 007",
+        "principal": 2500000,
+        "orig_rating": "BB+",
+        "curr_rating": "B-",
+        "dpd": 0,
+        "flags": [
+          "distressed_restructuring"
+        ],
+        "stage": 3,
+        "triggers": [
+          "Qualitative flag: distressed_restructuring"
+        ],
+        "ecl_12m": 26954.98,
+        "ecl_lifetime": 164811.48,
+        "ecl_applied": 1540284.36,
+        "lgd_used": 0.65,
+        "measurement": "defaulted_one_year_loss_proxy"
+      }
+    ],
+    "totals": {
+      "total_ead": 18800000.0,
+      "stage1_ead": 5000000.0,
+      "stage1_ecl": 827.98,
+      "stage1_count": 2,
+      "stage2_ead": 10500000.0,
+      "stage2_ecl": 94874.26,
+      "stage2_count": 3,
+      "stage3_ead": 3300000.0,
+      "stage3_ecl": 2030850.4,
+      "stage3_count": 2,
+      "total_ecl": 2126552.64,
+      "stage1_coverage": 0.0166,
+      "stage2_coverage": 0.9036,
+      "stage3_coverage": 61.5409,
+      "total_coverage": 11.3115
+    }
+  },
+  "scenario_weighted": {
+    "scenarios": [
+      {
+        "loans": [
+          {
+            "loan_name": "Borrower 001",
+            "principal": 2000000,
+            "orig_rating": "BBB",
+            "curr_rating": "BBB",
+            "dpd": 0,
+            "flags": [],
+            "stage": 1,
+            "triggers": [
+              "No SICR triggers fired \u2014 loan remains performing"
+            ],
+            "ecl_12m": 434.78,
+            "ecl_lifetime": 4483.63,
+            "ecl_applied": 434.78,
+            "lgd_used": 0.45,
+            "measurement": "rating_curve",
+            "orig_current_rating": "BBB",
+            "stressed_rating": "BBB",
+            "rating_shifted_by": 0
+          },
+          {
+            "loan_name": "Borrower 002",
+            "principal": 3000000,
+            "orig_rating": "A",
+            "curr_rating": "A-",
+            "dpd": 0,
+            "flags": [],
+            "stage": 1,
+            "triggers": [
+              "No SICR triggers fired \u2014 loan remains performing"
+            ],
+            "ecl_12m": 393.2,
+            "ecl_lifetime": 1875.15,
+            "ecl_applied": 393.2,
+            "lgd_used": 0.45,
+            "measurement": "rating_curve",
+            "orig_current_rating": "A-",
+            "stressed_rating": "A-",
+            "rating_shifted_by": 0
+          },
+          {
+            "loan_name": "Borrower 003",
+            "principal": 5000000,
+            "orig_rating": "BBB",
+            "curr_rating": "BB-",
+            "dpd": 0,
+            "flags": [],
+            "stage": 2,
+            "triggers": [
+              "Downgrade of 4 notches (BBB \u2192 BB-) >= threshold of 2",
+              "PD ratio 17.4x >= 2.0x AND absolute \u0394 0.82% >= 0.50%"
+            ],
+            "ecl_12m": 7751.2,
+            "ecl_lifetime": 67739.25,
+            "ecl_applied": 67739.25,
+            "lgd_used": 0.45,
+            "measurement": "rating_curve",
+            "orig_current_rating": "BB-",
+            "stressed_rating": "BB-",
+            "rating_shifted_by": 0
+          },
+          {
+            "loan_name": "Borrower 004",
+            "principal": 1500000,
+            "orig_rating": "BB",
+            "curr_rating": "BB",
+            "dpd": 35,
+            "flags": [],
+            "stage": 2,
+            "triggers": [
+              "DPD = 35 >= 30 (IFRS 9 \u00a75.5.11 rebuttable presumption)"
+            ],
+            "ecl_12m": 2314.29,
+            "ecl_lifetime": 15467.0,
+            "ecl_applied": 15467.0,
+            "lgd_used": 0.45,
+            "measurement": "rating_curve",
+            "orig_current_rating": "BB",
+            "stressed_rating": "BB",
+            "rating_shifted_by": 0
+          },
+          {
+            "loan_name": "Borrower 005",
+            "principal": 4000000,
+            "orig_rating": "BBB+",
+            "curr_rating": "BBB-",
+            "dpd": 0,
+            "flags": [
+              "watchlist"
+            ],
+            "stage": 2,
+            "triggers": [
+              "Downgrade of 2 notches (BBB+ \u2192 BBB-) >= threshold of 2",
+              "Qualitative flag: watchlist"
+            ],
+            "ecl_12m": 865.38,
+            "ecl_lifetime": 11668.01,
+            "ecl_applied": 11668.01,
+            "lgd_used": 0.45,
+            "measurement": "rating_curve",
+            "orig_current_rating": "BBB-",
+            "stressed_rating": "BBB-",
+            "rating_shifted_by": 0
+          },
+          {
+            "loan_name": "Borrower 006",
+            "principal": 800000,
+            "orig_rating": "BB",
+            "curr_rating": "CCC/C",
+            "dpd": 95,
+            "flags": [],
+            "stage": 3,
+            "triggers": [
+              "DPD >= 90 (CRR Art. 178)"
+            ],
+            "ecl_12m": 128822.64,
+            "ecl_lifetime": 198278.17,
+            "ecl_applied": 490566.04,
+            "lgd_used": 0.65,
+            "measurement": "defaulted_one_year_loss_proxy",
+            "orig_current_rating": "CCC/C",
+            "stressed_rating": "CCC/C",
+            "rating_shifted_by": 0
+          },
+          {
+            "loan_name": "Borrower 007",
+            "principal": 2500000,
+            "orig_rating": "BB+",
+            "curr_rating": "B-",
+            "dpd": 0,
+            "flags": [
+              "distressed_restructuring"
+            ],
+            "stage": 3,
+            "triggers": [
+              "Qualitative flag: distressed_restructuring"
+            ],
+            "ecl_12m": 26954.98,
+            "ecl_lifetime": 164811.48,
+            "ecl_applied": 1540284.36,
+            "lgd_used": 0.65,
+            "measurement": "defaulted_one_year_loss_proxy",
+            "orig_current_rating": "B-",
+            "stressed_rating": "B-",
+            "rating_shifted_by": 0
+          }
+        ],
+        "totals": {
+          "total_ead": 18800000.0,
+          "stage1_ead": 5000000.0,
+          "stage1_ecl": 827.98,
+          "stage1_count": 2,
+          "stage2_ead": 10500000.0,
+          "stage2_ecl": 94874.26,
+          "stage2_count": 3,
+          "stage3_ead": 3300000.0,
+          "stage3_ecl": 2030850.4,
+          "stage3_count": 2,
+          "total_ecl": 2126552.64,
+          "stage1_coverage": 0.0166,
+          "stage2_coverage": 0.9036,
+          "stage3_coverage": 61.5409,
+          "total_coverage": 11.3115
+        },
+        "scenario": "Baseline",
+        "notch_shift": 0,
+        "lgd_override": null,
+        "probability": 0.5
+      },
+      {
+        "loans": [
+          {
+            "loan_name": "Borrower 001",
+            "principal": 2000000,
+            "orig_rating": "BBB",
+            "curr_rating": "BB+",
+            "dpd": 0,
+            "flags": [],
+            "stage": 2,
+            "triggers": [
+              "Downgrade of 2 notches (BBB \u2192 BB+) >= threshold of 2"
+            ],
+            "ecl_12m": 3826.09,
+            "ecl_lifetime": 34150.35,
+            "ecl_applied": 34150.35,
+            "lgd_used": 0.55,
+            "measurement": "rating_curve",
+            "orig_current_rating": "BBB",
+            "stressed_rating": "BB+",
+            "rating_shifted_by": 2
+          },
+          {
+            "loan_name": "Borrower 002",
+            "principal": 3000000,
+            "orig_rating": "A",
+            "curr_rating": "BBB",
+            "dpd": 0,
+            "flags": [],
+            "stage": 2,
+            "triggers": [
+              "Downgrade of 3 notches (A \u2192 BBB) >= threshold of 2"
+            ],
+            "ecl_12m": 800.97,
+            "ecl_lifetime": 6882.51,
+            "ecl_applied": 6882.51,
+            "lgd_used": 0.55,
+            "measurement": "rating_curve",
+            "orig_current_rating": "A-",
+            "stressed_rating": "BBB",
+            "rating_shifted_by": 2
+          },
+          {
+            "loan_name": "Borrower 003",
+            "principal": 5000000,
+            "orig_rating": "BBB",
+            "curr_rating": "B",
+            "dpd": 0,
+            "flags": [],
+            "stage": 2,
+            "triggers": [
+              "Downgrade of 6 notches (BBB \u2192 B) >= threshold of 2",
+              "PD ratio 35.0x >= 2.0x AND absolute \u0394 1.70% >= 0.50%"
+            ],
+            "ecl_12m": 46052.63,
+            "ecl_lifetime": 286765.68,
+            "ecl_applied": 286765.68,
+            "lgd_used": 0.55,
+            "measurement": "rating_curve",
+            "orig_current_rating": "BB-",
+            "stressed_rating": "B",
+            "rating_shifted_by": 2
+          },
+          {
+            "loan_name": "Borrower 004",
+            "principal": 1500000,
+            "orig_rating": "BB",
+            "curr_rating": "B+",
+            "dpd": 35,
+            "flags": [],
+            "stage": 2,
+            "triggers": [
+              "Downgrade of 2 notches (BB \u2192 B+) >= threshold of 2",
+              "PD ratio 5.1x >= 2.0x AND absolute \u0394 1.47% >= 0.50%",
+              "DPD = 35 >= 30 (IFRS 9 \u00a75.5.11 rebuttable presumption)"
+            ],
+            "ecl_12m": 13750.0,
+            "ecl_lifetime": 71522.95,
+            "ecl_applied": 71522.95,
+            "lgd_used": 0.55,
+            "measurement": "rating_curve",
+            "orig_current_rating": "BB",
+            "stressed_rating": "B+",
+            "rating_shifted_by": 2
+          },
+          {
+            "loan_name": "Borrower 005",
+            "principal": 4000000,
+            "orig_rating": "BBB+",
+            "curr_rating": "BB",
+            "dpd": 0,
+            "flags": [
+              "watchlist"
+            ],
+            "stage": 2,
+            "triggers": [
+              "Downgrade of 4 notches (BBB+ \u2192 BB) >= threshold of 2",
+              "Qualitative flag: watchlist"
+            ],
+            "ecl_12m": 7615.38,
+            "ecl_lifetime": 81512.79,
+            "ecl_applied": 81512.79,
+            "lgd_used": 0.55,
+            "measurement": "rating_curve",
+            "orig_current_rating": "BBB-",
+            "stressed_rating": "BB",
+            "rating_shifted_by": 2
+          },
+          {
+            "loan_name": "Borrower 006",
+            "principal": 800000,
+            "orig_rating": "BB",
+            "curr_rating": "CCC/C",
+            "dpd": 95,
+            "flags": [],
+            "stage": 3,
+            "triggers": [
+              "DPD >= 90 (CRR Art. 178)"
+            ],
+            "ecl_12m": 128822.64,
+            "ecl_lifetime": 198278.17,
+            "ecl_applied": 490566.04,
+            "lgd_used": 0.65,
+            "measurement": "defaulted_one_year_loss_proxy",
+            "orig_current_rating": "CCC/C",
+            "stressed_rating": "CCC/C",
+            "rating_shifted_by": 2
+          },
+          {
+            "loan_name": "Borrower 007",
+            "principal": 2500000,
+            "orig_rating": "BB+",
+            "curr_rating": "CCC/C",
+            "dpd": 0,
+            "flags": [
+              "distressed_restructuring"
+            ],
+            "stage": 3,
+            "triggers": [
+              "Qualitative flag: distressed_restructuring"
+            ],
+            "ecl_12m": 404478.67,
+            "ecl_lifetime": 697304.55,
+            "ecl_applied": 1540284.36,
+            "lgd_used": 0.65,
+            "measurement": "defaulted_one_year_loss_proxy",
+            "orig_current_rating": "B-",
+            "stressed_rating": "CCC/C",
+            "rating_shifted_by": 2
+          }
+        ],
+        "totals": {
+          "total_ead": 18800000.0,
+          "stage1_ead": 0.0,
+          "stage1_ecl": 0.0,
+          "stage1_count": 0,
+          "stage2_ead": 15500000.0,
+          "stage2_ecl": 480834.28,
+          "stage2_count": 5,
+          "stage3_ead": 3300000.0,
+          "stage3_ecl": 2030850.4,
+          "stage3_count": 2,
+          "total_ecl": 2511684.68,
+          "stage1_coverage": 0.0,
+          "stage2_coverage": 3.1022,
+          "stage3_coverage": 61.5409,
+          "total_coverage": 13.36
+        },
+        "scenario": "Adverse",
+        "notch_shift": 2,
+        "lgd_override": 0.55,
+        "probability": 0.3
+      },
+      {
+        "loans": [
+          {
+            "loan_name": "Borrower 001",
+            "principal": 2000000,
+            "orig_rating": "BBB",
+            "curr_rating": "BBB+",
+            "dpd": 0,
+            "flags": [],
+            "stage": 1,
+            "triggers": [
+              "No SICR triggers fired \u2014 loan remains performing"
+            ],
+            "ecl_12m": 386.47,
+            "ecl_lifetime": 3985.44,
+            "ecl_applied": 386.47,
+            "lgd_used": 0.4,
+            "measurement": "rating_curve",
+            "orig_current_rating": "BBB",
+            "stressed_rating": "BBB+",
+            "rating_shifted_by": -1
+          },
+          {
+            "loan_name": "Borrower 002",
+            "principal": 3000000,
+            "orig_rating": "A",
+            "curr_rating": "A",
+            "dpd": 0,
+            "flags": [],
+            "stage": 1,
+            "triggers": [
+              "No SICR triggers fired \u2014 loan remains performing"
+            ],
+            "ecl_12m": 349.51,
+            "ecl_lifetime": 1666.8,
+            "ecl_applied": 349.51,
+            "lgd_used": 0.4,
+            "measurement": "rating_curve",
+            "orig_current_rating": "A-",
+            "stressed_rating": "A",
+            "rating_shifted_by": -1
+          },
+          {
+            "loan_name": "Borrower 003",
+            "principal": 5000000,
+            "orig_rating": "BBB",
+            "curr_rating": "BB",
+            "dpd": 0,
+            "flags": [],
+            "stage": 2,
+            "triggers": [
+              "Downgrade of 3 notches (BBB \u2192 BB) >= threshold of 2"
+            ],
+            "ecl_12m": 6889.95,
+            "ecl_lifetime": 60212.66,
+            "ecl_applied": 60212.66,
+            "lgd_used": 0.4,
+            "measurement": "rating_curve",
+            "orig_current_rating": "BB-",
+            "stressed_rating": "BB",
+            "rating_shifted_by": -1
+          },
+          {
+            "loan_name": "Borrower 004",
+            "principal": 1500000,
+            "orig_rating": "BB",
+            "curr_rating": "BB+",
+            "dpd": 35,
+            "flags": [],
+            "stage": 2,
+            "triggers": [
+              "DPD = 35 >= 30 (IFRS 9 \u00a75.5.11 rebuttable presumption)"
+            ],
+            "ecl_12m": 2057.14,
+            "ecl_lifetime": 13748.44,
+            "ecl_applied": 13748.44,
+            "lgd_used": 0.4,
+            "measurement": "rating_curve",
+            "orig_current_rating": "BB",
+            "stressed_rating": "BB+",
+            "rating_shifted_by": -1
+          },
+          {
+            "loan_name": "Borrower 005",
+            "principal": 4000000,
+            "orig_rating": "BBB+",
+            "curr_rating": "BBB",
+            "dpd": 0,
+            "flags": [
+              "watchlist"
+            ],
+            "stage": 2,
+            "triggers": [
+              "Qualitative flag: watchlist"
+            ],
+            "ecl_12m": 769.23,
+            "ecl_lifetime": 10371.57,
+            "ecl_applied": 10371.57,
+            "lgd_used": 0.4,
+            "measurement": "rating_curve",
+            "orig_current_rating": "BBB-",
+            "stressed_rating": "BBB",
+            "rating_shifted_by": -1
+          },
+          {
+            "loan_name": "Borrower 006",
+            "principal": 800000,
+            "orig_rating": "BB",
+            "curr_rating": "B-",
+            "dpd": 95,
+            "flags": [],
+            "stage": 3,
+            "triggers": [
+              "DPD >= 90 (CRR Art. 178)"
+            ],
+            "ecl_12m": 8584.91,
+            "ecl_lifetime": 34336.57,
+            "ecl_applied": 490566.04,
+            "lgd_used": 0.65,
+            "measurement": "defaulted_one_year_loss_proxy",
+            "orig_current_rating": "CCC/C",
+            "stressed_rating": "B-",
+            "rating_shifted_by": -1
+          },
+          {
+            "loan_name": "Borrower 007",
+            "principal": 2500000,
+            "orig_rating": "BB+",
+            "curr_rating": "B",
+            "dpd": 0,
+            "flags": [
+              "distressed_restructuring"
+            ],
+            "stage": 3,
+            "triggers": [
+              "Qualitative flag: distressed_restructuring"
+            ],
+            "ecl_12m": 26954.98,
+            "ecl_lifetime": 164811.48,
+            "ecl_applied": 1540284.36,
+            "lgd_used": 0.65,
+            "measurement": "defaulted_one_year_loss_proxy",
+            "orig_current_rating": "B-",
+            "stressed_rating": "B",
+            "rating_shifted_by": -1
+          }
+        ],
+        "totals": {
+          "total_ead": 18800000.0,
+          "stage1_ead": 5000000.0,
+          "stage1_ecl": 735.98,
+          "stage1_count": 2,
+          "stage2_ead": 10500000.0,
+          "stage2_ecl": 84332.67,
+          "stage2_count": 3,
+          "stage3_ead": 3300000.0,
+          "stage3_ecl": 2030850.4,
+          "stage3_count": 2,
+          "total_ecl": 2115919.05,
+          "stage1_coverage": 0.0147,
+          "stage2_coverage": 0.8032,
+          "stage3_coverage": 61.5409,
+          "total_coverage": 11.2549
+        },
+        "scenario": "Upside",
+        "notch_shift": -1,
+        "lgd_override": 0.4,
+        "probability": 0.2
+      }
+    ],
+    "weighted_ecl": 2239965.53,
+    "baseline_ecl": 2126552.64,
+    "ifrs9_overlay": 113412.89,
+    "overlay_pct": 5.3,
+    "total_ead": 18800000.0
+  },
+  "stage3_assumption": "PD=1; LGD loss discounted one year; no recovery cash-flow estimation"
+}
